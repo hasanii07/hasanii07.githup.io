@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream Kiosk 🍦</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="head">
+      <h1 id="overskrift">Ice Cream Kiosk 🍦</h1>
+    </header>
+
+    <main class="container">
+      <!-- VENSTRE SIDE -->
+
+      <aside class="sidebar left">
+        <h2>Oppgraderinger</h2>
+        <button id="maskinBtn" onclick="buyMaskin()">Kjøp Maskin</button>
+        <button id="ansattBtn" onclick="buyAnsatt()">Ny Ansatt</button>
+      </aside>
+
+      <!-- MIDTDEL: SPILL  -->
+      <section class="game">
+        <div class="icecream-container">
+          <img
+            onclick="sellIce()"
+            id="iceCream"
+            src="images/ice-cream.png"
+            alt="Iskrem"
+          />
+        </div>
+
+        <div class="stats">
+          <p>Penger: <span id="penger">0</span></p>
+        </div>
+      </section>
+
+      <!-- HØYRE SIDE: STATISTIKK -->
+
+      <aside class="sidebar right">
+        <div>
+          <h2>Statistikk</h2>
+          <p>Antall Maskiner: <span id="maskiner">0</span></p>
+          <p>Antall Ansatte: <span id="ansatter">0</span></p>
+          <p>Antall Biler: <span id="biler">0</span></p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <button id="bilBtn" onclick="kjøpBil()">Kjøp Bil (1 000 000💰)</button>
+      <p>🍧 Laget av Hasan</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
